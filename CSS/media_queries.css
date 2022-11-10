@@ -1,0 +1,40 @@
+@media (max-width: 800px) {
+    .item1 {
+        background-color: #8f7676;
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+/* que desde 300 para abajo se efectua esto */
+
+@media (min-width: 300px) {
+    .item1 {
+        background-color: #df2323;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* y este que desde el 300px hasta el 800px */
+
+/* Break points esta dimensión en el width o en el viewport en el que se genera ese cambió */
+
+/* cuando la pantalla sea más pequeña que 480 px las lineas se ejecutan  */
+
+@media (min-width: 480px) {
+
+};
+
+/* Pero si mi pantalla es más grande de 480px el siguiente media queries es el que le dará los estilos */
+@media (min-width: 780px) {
+    
+};
+
+@media (min-width: 1024px) {
+    
+};
+
+/* !! desde pantallas más chicas a más grandes!! */
+/* diferentes archivos css pero enfocados a cada cual en el head como link */
