@@ -251,6 +251,59 @@
             display: block;
         }
         
+        /* header img donations */
+        .container-img-ads {
+            width: 100vw;
+        }
+
+        .container-img-ads div picture img {
+            width: 100vw;
+        }
+
+        /* donations fixed button */
+        .container-help-here:hover a {
+            box-shadow: none;
+        }
+
+        .container-help-here:hover {
+            transform: scale(1.1);
+            transition: all 0.6s ease;
+        }
+
+        .container-help-here {
+            position: fixed;
+            top: 17.5rem;
+            right: 0;
+            padding: 4px;
+            background-color: #ff0000;  
+            text-align: center;
+            border-radius: 20px 0 0  20px;
+            box-shadow: 1px 2px 8px var(--background-nav);
+            cursor: pointer;
+        }
+
+        .container-help-here .help-here__elements .help-here__icon {
+            color: var(--font-color-white);
+            font-size: 25px;
+            line-height: 2px;
+            width: 100vw;
+        }
+
+        .container-help-here .help-here__elements .help-here__icon span{
+            color: var(--font-color-white);
+            font-size: 30px;
+        }
+
+        .container-help-here .help-here__elements .help-here__icon .help-here__text {
+            padding: 0 21px;
+            font-size: 18px;
+            font-weight: bolder;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 2px;
+        }
+
+
+
         @media (max-width:767px) {
             .modal-container .modal {
                 width: 90%;
@@ -370,9 +423,31 @@
                 </nav>
             </div>
         </div>
+
+        <!-- botón dona aquí  -->
+
+        <div class="container-help-here">
+            <div class="help-here__elements">
+                <a href="#" class="help-here__icon">
+                    <i class="help-here__hands">🤲
+                        <span class="icon icon-heart"></span>
+                    </i>
+                    <p class="help-here__text">Dona aquí</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- header img donations -->
+
+        <div class="container-img-ads">
+            <div>
+               <picture>
+                    <img src="./assets/CampanaLluvias_PiezasPromocionales_-1-1080x342.jpg" alt="publicidad-de-la-cruz-roja-para-donaciones">
+               </picture>
+            </div>
+        </div>
     </header>
 
-
-    <!-- <script src="./main.js"></script> -->
+    <script src="./main.js"></script>
 </body>
 </html>
