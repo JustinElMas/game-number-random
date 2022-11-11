@@ -35,9 +35,3 @@ window.addEventListener('click', function(e){
         }, 700);
     }
 });
-
-//for 
-
-for (let i = 0; i < 10; i++){
-    document.write(`</br> ${i}  </br> `);
-};
