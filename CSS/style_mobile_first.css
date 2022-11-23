@@ -1,0 +1,217 @@
+:root {
+    --font-color-white: #fff;
+    --font-color-black: #000;
+    --background-nav: #263843;
+    --background-nav-ligth: #a19d9d;
+    --background-color-light: #fffafa;
+    --background-media-hover: #ff6a6a;
+    --color-red: #ff0000;
+    --font-sm: 12px;
+    --font-md: 13px;
+    --font-regular: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+/* START: style to header */
+
+header {
+    background: linear-gradient(161deg, var(--color-red), var(--font-color-white) 15%, var(--font-color-white), var(--font-color-white), var(--background-media-hover));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 334px;
+    text-align: center;
+    align-items: center;
+    color: var(--font-color-black);
+}
+
+.portada {
+    width: 90%;
+    /* ajustamos el ancho de este bloque contenedor de elementos y modificadores, para que siempre se mantenga el 90% entre el min (288px) y el max (900px) */
+    min-width: 288px;
+    max-width: 900px;
+    height: 210px;
+    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+.portada__titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--font-regular);
+    font-weight: bolder;
+    border-bottom: 0.15rem solid var(--color-red);
+}
+
+.portada__parrafo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(var(--font-regular) - 1.5px);
+}
+
+header img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.portada a span {
+    font-size: calc(var(--font-sm) + 2px);
+    line-height: 20px;
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+}
+
+.portada .portada__btn{
+    position: absolute;
+    left: calc(50% - 110px);
+    display: block;
+    margin-top: 64px;
+    border: 0.12rem groove #000;
+    padding: 6px;
+    border-radius: 8px;
+    width: 229px;
+    height: 48px;
+    line-height: 30px;
+    background-color: var(--background-color-light);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.36);
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--font-color-white);
+}
+
+.main-humanitary-help {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-humanitary-help__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--font-color-black);
+}
+
+.main-humanitary-help .background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url('../assets/undraw_family_vg76.svg');
+    background-position: center;
+    background-size: calc((100% - 40px));
+    background-repeat: no-repeat;
+    background-color:rgb(162, 174, 238);
+    border-radius: 14px;
+    filter: hue-rotate(125deg);
+}
+
+.main-humanitary-help h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.main-humanitary-help p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+
+
+/* tablas */
+
+.main-tables-container table tr td span {
+    font-size: 9px;
+    color: chartreuse;
+}
+
+.main-currency-table  {
+    width: 70%;
+    min-width: 235px; 
+    max-width:500px; 
+    height: 360px;
+    margin: 0 auto;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.currency-table--title::after {
+    content: "🌱";
+}
+
+.main-currency-table .currency-table--title {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: var(--font-color-white);
+    font-weight: bolder;
+    line-height: 2.3rem;
+    background-color: #ff6a6a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 4px 8px #a19d9d;
+    border-radius: 10px;
+}
+
+.currency-table--container td {
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.9rem;
+    border-bottom: 0.15rem solid var(--color-red);
+}
+
+.currency-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+    border-left: 4px solid rgb(255, 0, 0);
+}
+
+.currency-table--container .table__top-right {
+    border-radius: 0 15px 0 0;
+    border-right: 4px solid rgb(255, 0, 0);
+}
+
+.currency-table--container .table__bottom-left {
+    border-radius: 0 0 0 15px;
+    border-left: 4px solid rgb(255, 0, 0);
+}
+
+.currency-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+    border-right: 4px solid rgb(255, 0, 0);
+}
