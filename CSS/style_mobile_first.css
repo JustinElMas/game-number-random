@@ -216,6 +216,135 @@ main {
     border-right: 4px solid rgb(255, 0, 0);
 }
 
+/* style for the p date update */
+
+.currency-table--date {
+    background-color: #ff6a6a;
+    width: 190px;
+    height: 50%;
+    margin: 0 auto;
+    color: var(--background-color-light);
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.currency-table--date p {
+    margin: 5px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    margin-top: 120px;
+    padding: 20px 10px;
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+.product-detail--batata-logo {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    width: 40px;
+    height: 25px;
+    color: rgb(255, 151, 151);
+    left: calc(50% - 20px);
+    top: -12px;
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #e9dcdc;
+}
+
+.product-detils--card {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 190px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color:#ff4040;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-detils--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.product__card--title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 1.8px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.product__card--body {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* START THE TABLE TWO  */
 
 .main-tables-container .container__table--two {
