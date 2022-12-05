@@ -393,6 +393,44 @@ main {
     color: var(--background-color-light);
 }
 
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    top: -50px;
+    background-color: var(--background-media-hover);
+    font-size: 1rem;
+    border-radius: 8px;
+    color: var(--background-color-light);
+    font-variant: small-caps;
+    padding: 5px;
+}
+
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--background-color-light);
+}
+
+.plan-card--price {
+    padding: 5px;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--background-color-light);
+}
+
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+/* para poner los estilos de 
+forma al centro hay que desactivar el demo.css */
 
 
 
