@@ -381,11 +381,12 @@ main {
 
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
-    margin: 50px auto 0;
+    height: 312px;
+    margin: 50px 15px auto;
     padding: 0 15px;
     background-color: var(--color-red);
     box-shadow: 0 4px 8px var(--font-color-black);
@@ -419,14 +420,51 @@ main {
     padding: 5px;
     font-size: 5rem;
     font-weight: bold;
-    line-height: 5.3rem;
+    line-height: 1;
     color: var(--background-color-light);
+    margin: 0 !important;
+}
+
+.plan-card-saving {
+    margin-top: 0 !important;
+    font-size: 1.1rem;
+    color:#e9dcdc;
+    font-weight: bolder;
 }
 
 .plan-card--price span {
     font-size: 1.2rem;
     font-weight: 400;
     vertical-align: top;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid var(--background-nav);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    font-family: monospace;
+}
+
+.plan-card--ca span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ff0000;
+}
+
+.plans-container--slider {
+    display: flex;
+    gap: 50px;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 /* para poner los estilos de 
