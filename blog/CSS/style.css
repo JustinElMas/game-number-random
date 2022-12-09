@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color-primary: #fff;
+    --bg-color-second: #47cfca;
+    --font-black: #000;
+    --font-weight: 700;
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-Roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--font-black);
+    margin: 0 10px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color-primary);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* style for icons */
+
+header .header-icons-container {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    background-color: var(--bg-color-second);
+}
+
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: flex-end;
+    justify-self: end;
+    margin-right: 20px;
+    font-size: 30px;
+
+}
+
+header .header-icons-container .icons a span {
+    color: var(--bg-color-primary);
+    border-radius: 100%;
+}
+
+/* style nav */
+
+header nav {
+    /* seccionar el posicionamiento */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+}
+
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+
+nav .profile-name-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 18.55px;
+}
+
+/* style for logo on the nav */
+
+header nav .nav-logo-container a figure img {
+    border-bottom: 5px solid var(--bg-color-second);
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 2px;
+}
+
+nav .profile-name-link a {
+    border-bottom: 2.5px solid var(--font-black);
+}
+
+nav .profile-name-link:hover a {
+    border-bottom: 6px double var(--bg-color-second);
+    transition: all 0.1s ease;
+}
+
+/* animation logo */
+
+header nav .nav-logo-container a figure img {
+    animation: logosplash 2s alternate infinite;
+}
+
+@keyframes logosplash {
+    from {
+        transform: translateY(-15px);
+    }
+}
+
+/* section hero style */
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* aquí no te da scroll en la otra si, con height 100vh te da scroll queda bien pero te da scroll, con 100% no lo hace */
+    height: 100%;
+    background: url(../ASSETS/assets/img/Cover.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* HAY QUE QUITAR ESTE BORDE DE LA PARTE DE MOBILE FIRST */
+    border: 2px solid #000;
+}
+
+.home-main .hero {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    margin-top: 90px;
+}
+
+.home-main .hero .hero__title {
+    font-size: 50px;
+    font-family: var(--font-Roboto);
+    font-weight: var(--font-weight);
+    letter-spacing: 14px;
+    text-align: center;
+    color: var(--bg-color-primary);
+}
+
+.home-main .hero .hero__btn {
+    width: 140px;
+    height: 60px;
+    background-color: var(--bg-color-second);
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-main .hero .hero__btn a {
+    color: var(--bg-color-primary);
+    font-weight: var(--font-weight);
+    font-size: 18px;
+    font-family: monospace;
+}
+
+/*muy bien exelente forma de hacerlo, pero es hora de hacerlo, manejarlo con grid para posicionamiento de contenedores*/
+/* .home-main .hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../ASSETS/assets/img/Cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* if you want can delete these attachment */
+    /* background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main .hero .hero__title p{
+    font-size: 4rem;
+    letter-spacing: 14px;
+    font-weight: var(--font-weight);
+}
+
+.home-main .hero .hero__btn a {
+    background-color: var(--bg-color-second);
+    color: var(--font-black);
+    width: 140px;
+    height: 55px;
+    text-align: center;
+    font-weight: var(--font-weight);
+    font-family: monospace;
+    font-size: 20px;
+    border: 0.5px solid #f2f2ff;
+    box-shadow: 0px 2px 5px var(--bg-color-primary);
+    line-height: 55px;
+    margin-top: 110px;
+} */
+
+/* style for blogs lectures and histories */
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+
+.blog-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+    /* ¿qué significa esto? */
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    
+}
+.blogs-news-info-container {
+    grid-column: 2;
+}
+
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
