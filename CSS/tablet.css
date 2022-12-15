@@ -1,4 +1,9 @@
 /* style for css */
+
+.main-humanitary-help {
+    margin-top: 40px;
+}
+
 .product-cards--container{
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +11,25 @@
     margin: 0 auto;
 }
 
+.product-detils--card{
+    box-shadow: 0 4px 5px 7px rgb(0 0 0 / 20%);
+}
+
 .plans-container--slider {
     justify-content: center;
+}
+
+/* button of hero */
+
+header .portada .portada__btn{
+    margin-top: 13px;
+    left: calc(50% - 119px);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 50%;
+    margin: 0 auto;
 }

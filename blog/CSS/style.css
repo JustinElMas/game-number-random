@@ -42,6 +42,11 @@ header {
     grid-template-rows: 1fr 1fr;
 }
 
+.grid-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* style for icons */
 
 header .header-icons-container {
@@ -219,7 +224,7 @@ header nav .nav-logo-container a figure img {
 
 .blogs-news-container {
     background-color: #e6e9ed;
-    padding: 0 50px 40px;
+    padding: 25px 50px 40px;
 }
 
 .blog-main-new {
@@ -228,13 +233,19 @@ header nav .nav-logo-container a figure img {
     grid-template-rows: 2fr;
 }
 
+.blog-main-new h3 {
+    margin-bottom: 17px;
+}
+
 .blogs-news-img-container {
     /* ¿qué significa esto? */
     grid-column: 1;
 }
 
 .blogs-news-img-container img {
-    
+    width: 75%;
+    border-radius: 5px;
+    border-bottom: 10px solid #ffc2cc;
 }
 .blogs-news-info-container {
     grid-column: 2;
@@ -242,4 +253,58 @@ header nav .nav-logo-container a figure img {
 
 .blogs-news-info-container p {
     margin-bottom: 35px;
+    font-size: 22px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3{
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bolder;
+}
+
+.blogs-button {
+    border: 2.5px solid #47cfca;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blogs-posts-container .post-container p {
+    margin: 25px 0;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #22272d;
+    color: var(--bg-color-primary);
+    border-top: 40px solid var(--bg-color-second);
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
 }

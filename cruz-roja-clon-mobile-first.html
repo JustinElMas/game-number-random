@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./Font/demo-files/demo.css">
     <link rel="stylesheet" href="./CSS/style_mobile_first.css">
-    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 940px)">
+    <!-- que el navegador cargue los estilos de la linea de codigo de abajo cuando tenga el breakpoint -->
+    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 930px)">
+    <link rel="stylesheet" href="./CSS/desktop.css" media="(min-width: 1200px)" />
 </head>
 <body>
 
@@ -113,6 +115,7 @@
             </div>
 
             <section class="product-cards--container">
+                
                 <article class="product-detils--card">
                     <span class="clock icon icon-clock"></span>
                     <p class="product__card--title">Tiempo real</p>
@@ -120,9 +123,7 @@
                         Nuestra API toma la información minuto a minuto sobre las tasas que determinan el comportamiento.
                     </p>
                 </article>
-            </section>
 
-            <section class="product-cards--container">
                 <article class="product-detils--card">
                     <span class="clock icon icon-eye"></span>
                     <p class="product__card--title">Información vital</p>
@@ -130,9 +131,7 @@
                         Mantenemos informada a la comunidad de posibles riesgos y novedades similares.
                     </p>
                 </article>
-            </section>
 
-            <section class="product-cards--container">
                 <article class="product-detils--card">
                     <span class="clock icon icon-coin-dollar"></span>
                     <p class="product__card--title">Autofinanciamiento</p>
@@ -140,9 +139,8 @@
                         Somos una entidad no gubernamental, en constante trabajo para recoger fondos.
                     </p>
                 </article>
-            </section>
 
-            <section class="product-cards--container">
+
                 <article class="product-detils--card">
                     <span class="clock icon icon-checkmark"></span>
                     <p class="product__card--title">Entrenamiento</p>
